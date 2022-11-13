@@ -1,0 +1,29 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="card mb-3" style="width: 450px; margin: auto;">
+            <img src="/assets/images/KH07 JH0877.jpg" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+                <form [formGroup]="bidForm" class="">
+                    <div class="form-group my-2">
+                        <input formControlName="biddername" type="text" style="width: 400px; margin: auto;"
+                            class="form-control" placeholder="name">
+                    </div>
+                    <div class="form-group my-2">
+                        <input formControlName="mobileNo" type="text" style="width: 400px; margin: auto;"
+                            class="form-control" placeholder="Enter mobile number enter">
+                    </div>
+                    <div class="form-group my-2">
+                        <input formControlName="bidPrice" type="number" style="width: 400px; margin: auto;"
+                            class="form-control" placeholder="Enter your bidding price">
+                    </div>
+
+                    <!-- form -->
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary mt-3" type="submit" style="width: 400px; margin: auto;"
+                            (click)="addBid()" routerLinkActive="active">Bid</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
